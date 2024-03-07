@@ -27,10 +27,10 @@ public class GameDTO {
         this.shortDescription = entity.getShortDescription();
     }
 
-    public GameDTO(GameMinProjection projection) {
+    public GameDTO(GameMinProjection projection) { //esse construtur é usado para criar um GameDTO a partir de uma projeção de dados
         this.id = projection.getId();
         this.title = projection.getTitle();
-        this.year = projection.getYear();
+        this.year = projection.getGameYear();
         this.imgUrl = projection.getImgUrl();
         this.shortDescription = projection.getShortDescription();
     }
