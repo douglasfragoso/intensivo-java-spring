@@ -14,6 +14,10 @@ O projeto consiste numa API RESTFul com java e spring boot para fazer requisiç�
 - Postman
 - Docker
 
+## Modelo de domínio DSList
+
+![Modelo de domínio DSList](https://github.com/douglasfragoso/intensivo-java-spring/blob/main/dslist-model.png)
+
 # Perfis de projeto
 ## Perfil de desenvolvimento e testes
  - test
@@ -36,9 +40,9 @@ O projeto consiste numa API RESTFul com java e spring boot para fazer requisiç�
 
 1. Clone o projeto para sua IDE preferida.
 2. Execute o arquivo docker-compose.yml para criar os containers do Postgres e pgAdmin
-   - Certifique-se que está na pasta do projeto ao abrir o terminal.
-   - Adicione o comando para criar os containers: docker-compose up -d
-   - Verifique se os containers estão rodando com: docker ps
+  - Certifique-se que está na pasta do projeto ao abrir o terminal.
+  - Adicione o comando para criar os containers: docker-compose up -d
+  - Verifique se os containers estão rodando com: docker ps
 4. Execute o projeto Spring Boot com spring.profiles.active=${APP_PROFILE:dev} no aplication.properties.
 5. Importe a collection para o Postman através do arquivo `course/CourseApplication.postman_collection.json`.
 6. Utilize as rotas fornecidas para realizar requisições ao sistema.
