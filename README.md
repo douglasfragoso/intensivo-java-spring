@@ -19,14 +19,17 @@ O projeto consiste numa API RESTFul com java e spring boot para fazer requisiç�
 ![Modelo de domínio DSList](https://github.com/douglasfragoso/intensivo-java-spring/blob/main/dslist-model.png)
 
 # Consulta SQL - verificação método POST
-## Utilize a consulta a seguir no banco de dados para verificar a mudança de posição do jogo na lista.
+Utilize a consulta a seguir no banco de dados para verificar a mudança de posição do jogo na lista.
 
+```sql
 SELECT TB_BELONGING .*, TB_GAME.TITLE FROM TB_BELONGING
 INNER JOIN TB_GAME ON TB_GAME.ID = TB_BELONGING.GAME_ID
 WHERE LIST_ID = 2
 ORDER BY POSITION
+```
 
 # Perfis de projeto
+
 ## Perfil de desenvolvimento e testes
  - test
  - H2 Database
